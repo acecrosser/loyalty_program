@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PostCardController!{% endblock %}
+
+{% block body %}
+    {{ form_start(form) }}
+    {{ form_label(form.surname) }}
+    {{ form_widget(form.surname) }}
+    {{ form_label(form.name) }}
+    {{ form_widget(form.name) }}
+    {{ form_label(form.patronymic) }}
+    {{ form_widget(form.patronymic) }}
+    {{ form_label(form.date_birth) }}
+    {{ form_widget(form.date_birth)}}
+    {{ form_label(form.number) }}
+    {{ form_widget(form.number )}}
+    {{ form_label(form.email) }}
+    {{ form_widget(form.email )}}
+    <button class="btn btn-primary" type="submit">Добавить</button>
+    {{ form_end(form) }}
+
+{% endblock %}
