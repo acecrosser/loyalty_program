@@ -23,12 +23,12 @@ class Cards
     private $surname;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", nullable=false)
      */
     private $name;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", nullable=false)
      */
     private $patronymic;
 
@@ -48,7 +48,7 @@ class Cards
     private $email;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="integer", nullable=true)
      */
     private $balance;
 
@@ -79,7 +79,7 @@ class Cards
     /**
      * @param mixed $surname
      */
-    public function setSurname($surname)
+    public function setSurname($surname): void
     {
         $this->surname = $surname;
     }
@@ -95,9 +95,9 @@ class Cards
     /**
      * @param mixed $name
      */
-    public function setName($name)
+    public function setName($name): void
     {
-        $this->surname = $name;
+        $this->name = $name;
     }
 
     /**
@@ -113,13 +113,13 @@ class Cards
      */
     public function setPatronymic($patronymic): void
     {
-        $this->surname = $patronymic;
+        $this->patronymic = $patronymic;
     }
 
     /**
      * @return mixed
      */
-    public function getDateBirth()
+    public function getDateBirth(): ?\DateTimeInterface
     {
         return $this->date_birth;
     }
@@ -127,9 +127,9 @@ class Cards
     /**
      * @param mixed $date_birth
      */
-    public function setDateBirth($date_birth)
+    public function setDateBirth($date_birth): void
     {
-        $this->surname = $date_birth;
+        $this->date_birth = $date_birth;
     }
 
     /**
@@ -143,9 +143,9 @@ class Cards
     /**
      * @param mixed $number
      */
-    public function setNumber($number)
+    public function setNumber($number): void
     {
-        $this->surname = $number;
+        $this->number = $number;
     }
 
         /**
@@ -159,9 +159,9 @@ class Cards
     /**
      * @param mixed $email
      */
-    public function setEmail($email)
+    public function setEmail($email): void
     {
-        $this->surname = $email;
+        $this->email = $email;
     }
 
     /**
@@ -175,12 +175,12 @@ class Cards
     /**
      * @param mixed $balance
      */
-    public function setBalance($balance)
+    public function setBalance($balance): void
     {
-        $this->surname = $balance;
+        $this->balance = $balance;
     }
 
-        /**
+    /**
      * @return mixed
      */
     public function getIdCard()
@@ -191,9 +191,9 @@ class Cards
     /**
      * @param mixed $id_card
      */
-    public function setIdCard($id_card)
+    public function setIdCard($id_card): void
     {
-        $this->surname = $id_card;
+        $this->id_card = $id_card;
     }
 
     /**
@@ -209,7 +209,7 @@ class Cards
      */
     public function setCreated(\DateTimeInterface $created)
     {
-        $this->surname = $created;
+        $this->created = $created;
     }
 
 }

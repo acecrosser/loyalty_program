@@ -22,8 +22,10 @@ class PostCardController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $id_card = uniqid('', true);
+            $balance = 0;
             $card->setIdCard($id_card);
             $card->setCreated(new \DateTime());
+            $card->setBalance($balance);
 
             $em = $this->getDoctrine()->getManager();
             $em->persist($card);
