@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FiscalsController!{% endblock %}
+
+{% block body %}
+    {{ form_start(form) }}
+    {{ form_label(form.fnumber) }}
+    {{ form_widget(form.fnumber) }}
+    <button class="btn btn-primary" type="submit">Добавить</button>
+    {{ form_end(form) }}
+{% endblock %}

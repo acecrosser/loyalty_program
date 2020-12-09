@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ChecksController!{% endblock %}
+
+{% block body %}
+    <form action="/add/bonus" method="POST">
+        <p><input type="text" name="indef">Введите номер телефона или номер карты</p>
+        <p><input type="text" name="qrcode">Введите QR Code</p>
+        <p><button class="" type="submit">Отправить</button></p>
+    </form>
+{% endblock %}

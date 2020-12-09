@@ -18,7 +18,7 @@ class Fiscals
     private $id;
 
     /**
-     * @ORM\Column(type="integer", nullable=false)
+     * @ORM\Column(type="integer", unique=true, nullable=false)
      */
     private $fnumber;
 
@@ -33,14 +33,14 @@ class Fiscals
 
     public function getFnumber()
     {
-        return $this->$fnumber;        
+        return $this->fnumber;
     }
 
     /**
      * @param mixed $fnumber
      */
 
-    public function setFnumber($fnumber)
+    public function setFnumber($fnumber): void
     {
         $this->fnumber = $fnumber;
     }

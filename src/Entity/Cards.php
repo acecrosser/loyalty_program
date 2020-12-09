@@ -167,7 +167,7 @@ class Cards
     /**
      * @return mixed
      */
-    public function getBalance()
+    public function getBalance(): int
     {
         return $this->balance;
     }
