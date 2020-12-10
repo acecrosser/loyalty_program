@@ -62,6 +62,11 @@ class Cards
      */
     private $created;
 
+    /**
+     * @ORM\Column(type="boolean", options={"default":false})
+     */
+    private $regulations;
+
 
     public function getId(): ?int
     {
@@ -212,4 +217,19 @@ class Cards
         $this->created = $created;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getRegulations():bool
+    {
+        return boolval($this->regulations);
+    }
+
+    /**
+     * @param mixed $regulations
+     */
+    public function setRegulations(bool $regulations): bool
+    {
+        return $this->regulations = $regulations;
+    }
 }

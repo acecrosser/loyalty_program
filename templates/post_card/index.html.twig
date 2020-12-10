@@ -16,7 +16,9 @@
     {{ form_widget(form.number, {'attr': {'class': 'form-control mb-3'}}) }}
     {{ form_label(form.email) }}
     {{ form_widget(form.email, {'attr': {'class': 'form-control mb-3'}}) }}
-    <button class="btn btn-primary" type="submit">Добавить карту</button>
+    {{ form_widget(form.regulations, {'attr': {'class': 'form-check-input'}}) }}
+    {{ form_label(form.regulations) }}
+    <br><br><button class="btn btn-primary" type="submit">Добавить карту</button>
     {{ form_end(form) }}
 
     {% if err %}

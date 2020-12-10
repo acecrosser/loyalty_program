@@ -27,7 +27,8 @@ class CardsType extends AbstractType
                 'label' => 'Отчество'
             ])
             ->add('date_birth', BirthdayType::class, [
-                'label' => 'Дата рождения'
+                'label' => 'Дата рождения',
+                'years' => range(date('1920'), date('2002')),
             ])
             ->add('number', IntegerType::class, [
                 'label' => 'Номер телефона'
@@ -35,9 +36,10 @@ class CardsType extends AbstractType
             ->add('email', EmailType::class, [
                 'label' => 'Электронная почта'
             ])
-//            ->add('checkbox', CheckboxType::class, [
-//                'label' => 'Согласие на обработку'
-//            ])
+            ->add('regulations', CheckboxType::class, [
+                'label' => 'Принять условия',
+                'required' => true,
+            ])
         ;
     }
 

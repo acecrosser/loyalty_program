@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93544593-0b8a-4580-8d3f-d91f52ef1443" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/ChecksController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/FiscalsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Checks.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/ChecksType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/FiscalsType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ChecksRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/fiscals/index.html.twig" afterDir="false" />
+    <list default="true" id="93544593-0b8a-4580-8d3f-d91f52ef1443" name="Default Changelist" comment="Готовы почти все проверки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201208141311.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20201209120111.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ChecksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ChecksController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FiscalsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FiscalsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PostCardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PostCardController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Cards.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Cards.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Fiscals.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Fiscals.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/CardsType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/CardsType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/post_card/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/post_card/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,8 +154,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607435556243</updated>
-      <workItem from="1607435557640" duration="20521000" />
+      <workItem from="1607435557640" duration="39937000" />
     </task>
+    <task id="LOCAL-00001" summary="Готовы почти все проверки">
+      <created>1607601799413</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607601799414</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,5 +179,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Готовы почти все проверки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Готовы почти все проверки" />
   </component>
 </project>
