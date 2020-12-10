@@ -38,7 +38,7 @@ class Cards
     private $date_birth;
 
     /**
-     * @ORM\Column(type="integer", length=11)
+     * @ORM\Column(type="integer", length=11, unique=true)
      */
     private $number;
 
@@ -55,7 +55,7 @@ class Cards
     /**
      * @ORM\Column(type="string", unique=true)
      */
-    private $id_card;
+    private $idcard;
 
     /**
      * @ORM\Column(type="datetime")
@@ -183,17 +183,17 @@ class Cards
     /**
      * @return mixed
      */
-    public function getIdCard()
+    public function getIdcard()
     {
-        return $this->id_card;
+        return $this->idcard;
     }
 
     /**
-     * @param mixed $id_card
+     * @param mixed $idcard
      */
-    public function setIdCard($id_card): void
+    public function setIdcard($idcard): void
     {
-        $this->id_card = $id_card;
+        $this->idcard = $idcard;
     }
 
     /**

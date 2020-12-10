@@ -1,11 +1,24 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello FiscalsController!{% endblock %}
+{% block title %}Добавить ФН{% endblock %}
 
 {% block body %}
     {{ form_start(form) }}
     {{ form_label(form.fnumber) }}
-    {{ form_widget(form.fnumber) }}
-    <button class="btn btn-primary" type="submit">Добавить</button>
+    {{ form_widget(form.fnumber, {'attr': {'class': 'form-control mb-3'}}) }}
+    <button class="btn btn-primary" type="submit">Добавить фискальный накопитель</button>
     {{ form_end(form) }}
+
+    {% if err %}
+        <center>
+            <p style="color: #B0413E"><b>{{  err.error }}</b></p>
+        </center>
+    {% endif %}
+
+    <br><br>
+    <b>Список добавленых ФН:</b><br><br>
+    {%  for fiscal in fiscals %}
+        <p>{{ fiscal.id }} - {{ fiscal.fnumber }}</p>
+    {% endfor %}
+
 {% endblock %}

@@ -1,22 +1,33 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello PostCardController!{% endblock %}
+{% block title %}Добавить карту{% endblock %}
 
 {% block body %}
     {{ form_start(form) }}
     {{ form_label(form.surname) }}
-    {{ form_widget(form.surname) }}
+    {{ form_widget(form.surname, {'attr': {'class': 'form-control mb-3'}}) }}
     {{ form_label(form.name) }}
-    {{ form_widget(form.name) }}
+    {{ form_widget(form.name, {'attr': {'class': 'form-control mb-3'}}) }}
     {{ form_label(form.patronymic) }}
-    {{ form_widget(form.patronymic) }}
+    {{ form_widget(form.patronymic, {'attr': {'class': 'form-control mb-3'}}) }}
     {{ form_label(form.date_birth) }}
-    {{ form_widget(form.date_birth) }}
+    {{ form_widget(form.date_birth, {'attr': {'class': 'form-control mb-3'}}) }}
     {{ form_label(form.number) }}
-    {{ form_widget(form.number )}}
+    {{ form_widget(form.number, {'attr': {'class': 'form-control mb-3'}}) }}
     {{ form_label(form.email) }}
-    {{ form_widget(form.email )}}
-    <button class="btn btn-primary" type="submit">Добавить</button>
+    {{ form_widget(form.email, {'attr': {'class': 'form-control mb-3'}}) }}
+    <button class="btn btn-primary" type="submit">Добавить карту</button>
     {{ form_end(form) }}
+
+    {% if err %}
+        <center>
+            <p style="color: #B0413E"><b>{{  err.error }}</b></p>
+        </center>
+    {% endif %}
+
+    <br><br>
+    {%  for card in cards %}
+        <p>{{ card.surname }} - {{ card.number }} - {{ card.balance }} - <b>{{ card.idcard }}</b></p>
+    {% endfor %}
 
 {% endblock %}

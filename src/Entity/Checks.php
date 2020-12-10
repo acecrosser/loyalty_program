@@ -38,7 +38,7 @@ class Checks
     private $fp;
 
     /**
-     * @ORM\Column(type="integer", unique=true)
+     * @ORM\Column(type="integer")
      */
     private $number;
 
