@@ -19,14 +19,4 @@ class IndexController extends AbstractController
             'controller_name' => 'IndexController',
         ]);
     }
-//
-//    /**
-//     * @Route("/add/bonus", name="add_bonus")
-//     */
-//    public function addBonus(Request $request): Response
-//    {
-//        return $this->render('index/index.html.twig', [
-//            'controller_name' => 'IndexController',
-//        ]);
-//    }
 }

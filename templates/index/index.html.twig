@@ -3,5 +3,29 @@
 {% block title %}Главная{% endblock %}
 
 {% block body %}
+    <h3>Тестовое задание "Программа лояльности по баллам"</h3>
 
+    <p>Для быстрого запуска на локальной машине, требуется чтоб было установленно:</p>
+    <li>PHP 7.4</li>
+    <li>Composer</li><br>
+
+    Для начала, создаем любую папку на локальном ПК:<br>
+    <code>mkdir name_dir</code><br><br>
+
+    Переходим в папку:<br>
+    <code>cd name_dir</code><br><br>
+    Через git делаем клонирование репозитория:<br>
+    <code>git clone https://github.com/acecrosser/loyalty_program.git</code><br><br>
+    Переходим в папку проекта:<br>
+    <code>cd loyalty_program</code><br><br>
+    Устанавливаем все зависимости через Composer:<br>
+    <code>composer install</code><br><br>
+    После установки, требуется создать файл базы:<br>
+    <code>php bin\console doctrine:database:create</code><br><br>
+    Далее осуществить миграцию данных. Применить миграцию:<br>
+    <code>symfony console doctrine:migrations:migrate</code><br><br>
+    Запустить сервер:<br>
+    <code>symfony server:start</code><br><br>
+    Перейти в браузер по адресу:<br>
+    <code>http://127.0.0.1:8000/</code><br>
 {% endblock %}
