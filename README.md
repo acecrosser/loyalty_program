@@ -30,10 +30,9 @@
 
 `php bin\console doctrine:database:create`
 
-Далее осуществить миграцию данных.
 Применить миграцию:
 
-`symfony console doctrine:migrations:migrate`
+`php bin\console doctrine:migrations:migrate`
 
 Запустить сервер:
 
